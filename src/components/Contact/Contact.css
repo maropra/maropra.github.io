@@ -1,0 +1,33 @@
+.contact{
+    margin-top: 9rem;
+    text-align: center;
+}
+
+.contact .icons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 3rem;
+    margin: 5rem 0 2rem;
+}
+
+.contact .icons a{
+    color: var(--text-dark);
+}
+
+.contact .icons i{
+    transition: all 0.3s ease-in-out;
+}
+.contact .icons i:hover,
+.contact .icons i:active{
+    color: var(--text-light);
+}
+
+.contact p{
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 400;
+    
+}

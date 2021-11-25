@@ -1,0 +1,53 @@
+nav{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-dark);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    padding: 0.7rem;
+    top: 0;
+    right: 0;
+}
+
+nav ul{
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+nav ul li{
+    color: var(--text-dark);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: var(--text-light);
+}
+nav ul li:active{
+    color: var(--text-light);
+}
+
+nav button{
+    display: none;
+}
+
+@media (max-width: 600px){
+    nav button{
+        display: block;
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 2rem;
+        color: var(--text-dark);
+        margin-right: 10px;
+        z-index: 6;
+    }   
+    nav button .fa-ellipsis-h.light{
+        color: white;
+    }
+    nav ul{
+        display: none;
+    }
+}

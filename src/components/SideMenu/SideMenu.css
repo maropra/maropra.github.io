@@ -1,0 +1,73 @@
+.hidden{
+    display: none;
+}
+
+.desplegable{
+    width: 70%;
+    height: 100vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    text-align: right;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Roboto', sans-serif;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+.desplegable .encabezado {
+    position: relative;
+    height: 30vh;
+    color: white;
+}
+
+.desplegable .encabezado .menu-desplegable{
+    background: none;
+    border: none;
+    padding: 1rem;
+    position: absolute;
+    top: -4px;
+    right: -5px;
+}
+
+.desplegable .encabezado h3 {
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.desplegable .cuerpo {
+    height: 70vh;
+}
+
+.desplegable .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 2rem 1rem;
+}
+
+.desplegable .links p{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+.desplegable .links p:hover,
+.desplegable .links p:active{
+    font-weight: 700;
+}
+
